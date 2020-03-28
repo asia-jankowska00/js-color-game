@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+
+body {
+    background: #333;
+    font-family: 'McLaren', regular;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header ------------------------- */
+
+h1 {
+    /* background: #ccc; */
+    color: white;
+    text-align: center;
+    text-shadow: black 1px 1px;
+    padding: 20px;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    margin: 0;
+}
+
+#colorDisplay {
+    display: block;
+    font-size: 200%
+}
+
+#tutorial {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Controls ----------------------- */
+
+#controls {
+    text-align: center;
+    margin: 40px;
+    height: 40px;
+    transition: all 0.2s;
+}
+
+button {
+    height: 100%;
+    background: white;
+    color: #333;
+    border: none;
+    outline: none;
+    font-family: 'Mclaren';
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-weight: bold;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    background: #333;
+    color: white;
+}
+
+#reset:hover {
+    transform: rotate(-10deg)
+}
+
+#message {
+    color: white;
+    width: 250px;
+    display: inline-block;
+}
+
+/* Dots ---------------------------- */
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dot {
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    margin: 1.66%;
+    /* border: 4px solid white; */
+    border-radius: 40px;
+    transition: transform, 0.2s;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.dot:hover {
+    transform: translate(0, -8px);
+}
+
+.selected {
+    background: #333;
+    color: white;
+    border: 2px white solid;
+}
